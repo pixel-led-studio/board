@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pixel-LED-Studio</title>
+  </head>
+  <body>
+    <a href="#chapters-section" class="navigate-top"> 📒 </a>
+
+    <div class="header">
+      <div class="header-title-1">Pixel-LED-Studio</div>
+      <div class="header-title-2">Controller Board</div>
+    </div>
+
+    <div class="content">
+      <div class="h-section">
+        <div class="main-image-container">
+          <img
+            class="main-image"
+            src="./images/pixel-led-studio-controller-board.png"
+          />
+        </div>
+      </div>
+
+      <div class="h-section">
+        <div class="h-section-title-1">✨ හැඳින්වීම</div>
+        <div class="h-section-content">
+          මෙම Controller Board එක WS2811, WS2812 වැනි RGB LED Strips මඟින් ආලෝක
+          රටා සෑදීම සඳහා නිර්මාණය කර ඇත. මීට අමතරව මෙම Board එකෙහි පහත සඳහන්
+          විශේෂාංග අන්තර්ගත වේ
+        </div>
+        <div class="h-section-content">
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              5v හා 12v LED Strips සඳහා භාවිතා කිරීමේ හැකියාව
+            </div>
+          </div>
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              5v හා 12v විදුලි සැපයුමෙන් ක්‍රියාත්මක වීමේ හැකියාව
+            </div>
+          </div>
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              Signal Output එක 5v වලින් ලබාදීමේ හැකියාව <sup>[1]</sup>
+            </div>
+          </div>
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              LED 4000 ක් දක්වා (2000‍x2) හෝ ඊටත් වඩා Control කිරීමේ හැකියාව
+              <sup>[2]</sup>
+            </div>
+          </div>
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              Controller Board කිහිපයක් එකට සම්බන්ධ කිරීමේ හැකියාව
+              <sup>[3]</sup>
+            </div>
+          </div>
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              Modes කිහිපයකින් ක්‍රියාත්මක වීමේ හැකියාව <sup>[4]</sup>
+            </div>
+          </div>
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              Micropython හා Arduino මගින් Program කිරීමේ හැකියාව
+            </div>
+          </div>
+          <div class="highlights-row">
+            <div class="highlights-row-icon">✅</div>
+            <div class="highlights-row-text">
+              MicroSD Adapter එකක් ලෙස ක්‍රියාත්මක වීමේ හැකියාව
+            </div>
+          </div>
+        </div>
+        <div class="h-section-content">
+          <small
+            >[1] LED Strips වල Signal Input Voltage එක අවමයෙන් 3.5v ලෙස සඳහන් කර
+            ඇත. ප්‍රායෝගිකව ESP8266, RP2040 වැනි Microcontroller වලින් සපයන 3.3v
+            Output වලින් ක්‍රියාත්මක වන නමුත්, එමගින් Signals විකෘති වීමේ
+            සම්භාවිතාව වැඩි කරයි.<br />
+            [2] සම්බන්ධ කල හැකි LED ප්‍රමාණය සීමාවක් නැති නමුත් LED ප්‍රමාණය
+            වැඩි වන විට සම්ප්‍රේෂණය කල යුතු දත්ත ප්‍රමාණය වැඩි වේ. සම්ප්‍රේෂණ
+            කාලය වැඩි වන විට LED රටා මාරු වීමට වැඩි කාලයක් ගතවේ. වේගවත් රටා
+            ලබාගැනීම අපහසු වේ.<br />
+            [3] වඩා වැඩි LED ප්‍රමාණයක් Control කිරිමේදී Controller Boards
+            කිහිපයක් සමාන්තරව සම්බන්ධ කර, පිටතින් සපයන Clock Signal එකක් මගින්
+            Synchronize ආකාරයට සියළුම Board වල රටා මාරු වීම පාලනය කල හැක. මේ
+            මගින් LED අති විශාල ප්‍රමාණයක් සමාන්තරව ක්‍රියාත්මක වන Board හරහා
+            වැඩි වේගයක් සහිත රටා නිර්මාණය කල හැක.
+          </small>
+        </div>
+      </div>
+
+      <div id="chapters-section" class="h-section">
+        <div class="h-section-title-1">📒 පටුන</div>
+        <div class="h-section-content">
+          <ol class="chapters-ol">
+            <li><a href="#chapter-1">ප්‍රධාන කොටස් හැඳින්වීම</a></li>
+            <li><a href="#chapter-2">භාවිතයට උපදෙස්</a></li>
+            <li><a href="#chapter-3">Chapter 03</a></li>
+            <li><a href="#chapter-4">Chapter 04</a></li>
+            <li><a href="#chapter-5">Chapter 05</a></li>
+          </ol>
+        </div>
+      </div>
+
+      <div id="chapter-1" class="h-section">
+        <div class="h-section-title-1">1) ප්‍රධාන කොටස් හැඳින්වීම</div>
+        <div class="h-section-content">
+          <div class="main-image-container">
+            <img
+              class="board-image-numbered"
+              src="./images/board-components-numbered.png"
+            />
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">01</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-power-connector">Power Connector</a>
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">02</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-power-indicator"
+                >Power Indicator LED</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">03</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-switching-headers"
+                >5v/12 Switching Headers</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">04</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-master-control-in"
+                >Master Control In</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">05</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-mode-indicator">Mode Indicator LED</a>
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">06</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-tf-card-slot">TF-Card Slot</a>
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">07</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-led-strip-out-1"
+                >LED Strip Out 1 + Power In</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">08</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-led-strip-out-2">LED Strip Out 2</a>
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">09</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-signal-out-indicator"
+                >Signal Out Indicator</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">10</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-signal-converter"
+                >3.3V to 5v Signal Converter</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">11</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-rp2040-microcontroller"
+                >RP2040 Microcontroller</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">12</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-flash-memory">4MB Flash Memory</a>
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">13</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-master-controller-out"
+                >Master Controller Out/Forward</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">14</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-firmware-install"
+                >Firmware Install/Mount SD Card</a
+              >
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">15</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-restart">Restart Board</a>
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">16</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-type-c-connector">Type-C Connector</a>
+            </div>
+          </div>
+        </div>
+        <div class="h-section-content">
+          <div id="component-power-connector" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Power Connector</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/main-power-connector.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-power-indicator" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Power Indicator LED</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/power indicator.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-switching-headers" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">5v/12v Switching Headers</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/power-select-jumpers.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-master-control-in" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Master Control In</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/master control in.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-mode-indicator" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Mode Indicator LED</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/mode-indicator.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-tf-card-slot" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">TF Card Slot</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/tf-card-connector.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-led-strip-out-1" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">LED Strip Out 1 + Power In</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/led-strip-out-1.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-led-strip-out-2" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">LED Strip Out 2</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/led-strip-out-2.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-signal-out-indicator" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Signal Out Indicator</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/led-strip-out-indicator.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-signal-converter" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">3.3v to 5v Signal Converter</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/level-shifter.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-rp2040-microcontroller" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">RP2040 Microcontroller</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/rp-2040-microcontroller.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-flash-memory" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">4MB Flash Memory</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/4mb-flash.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-master-controller-out" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Master Controller Out/Forward</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/master-control-out.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-firmware-install" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">
+                Firmware Install/Mount SD Card
+              </div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/flash-button.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-restart" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Restart Board</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/restart-button.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-type-c-connector" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">Type-C Connector</div>
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/type-c-connector.png"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="chapter-2" class="h-section">
+        <div class="h-section-title-1">2) භාවිතයට උපදෙස්</div>
+        <div class="h-section-content">
+          <div id="component-power-connector" class="h-sub-section">
+            <div class="h-section-title-2">
+              <div class="h-section-title-5">විදුලි සැපයුම</div>
+            </div>
+            <div class="h-section-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
