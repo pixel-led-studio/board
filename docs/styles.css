@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  color: #084fc7;
+  color: #0359b5;
 }
 
 .navigate-top {
@@ -82,41 +82,23 @@ a {
   flex-direction: column;
 }
 
-.h-section-title-1 {
-  font-weight: bold;
-  color: #696f7b;
-  border-bottom: 2px solid #bec0c3;
-  padding-bottom: 0.3rem;
-  margin-bottom: 0.75rem;
-}
-
 .h-section-title-2 {
-  font-weight: bold;
-  color: #696f7b;
-  border-bottom: 1px solid #bec0c3;
-  padding-bottom: 0.1rem;
-  margin-bottom: 0.25rem;
-}
-
-.h-section-title-1 {
-  font-size: 1.5rem;
-}
-
-.h-section-title-2 {
-  font-size: 1.4rem;
-}
-
-.h-section-title-3 {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #717171;
+    border-bottom: 2px solid #bec0c3;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.75rem;
 }
 
 .h-section-title-4 {
-  font-size: 1.2rem;
-}
-
-.h-section-title-5 {
-  font-size: 1rem;
-}
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #636363;
+    border-bottom: 1px solid #bec0c3;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
+}}
 
 .h-section-content {
   padding-top: 0.25rem;
@@ -171,9 +153,8 @@ a {
   padding-top: 0.1rem;
 }
 
-img.content-with-image-img {
+.content-with-image-img {
   float: left;
   margin-right: 1rem;
-  margin-bottom: 1rem;
-  width: 6rem;
+  width: 7.5rem;
 }
