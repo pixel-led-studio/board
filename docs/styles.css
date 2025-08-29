@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+      scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,6 +20,10 @@ body {
 
 a {
   color: #0359b5;
+}
+
+span.highlight-text {
+    background-color: #ffea66;
 }
 
 .navigate-top {
