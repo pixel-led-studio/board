@@ -163,11 +163,19 @@
           <div class="components-row">
             <div class="components-row-number">06</div>
             <div class="components-row-text">
-              -&nbsp;<a href="#component-tf-card-slot">TF-Card Slot</a>
+              -&nbsp;<a href="#component-rp2040-microcontroller"
+                >RP2040 Microcontroller</a
+              >
             </div>
           </div>
           <div class="components-row">
             <div class="components-row-number">07</div>
+            <div class="components-row-text">
+              -&nbsp;<a href="#component-tf-card-slot">TF-Card Slot</a>
+            </div>
+          </div>
+          <div class="components-row">
+            <div class="components-row-number">08</div>
             <div class="components-row-text">
               -&nbsp;<a href="#component-led-strip-out-1"
                 >LED Strip Out 1 + Power In</a
@@ -175,13 +183,13 @@
             </div>
           </div>
           <div class="components-row">
-            <div class="components-row-number">08</div>
+            <div class="components-row-number">09</div>
             <div class="components-row-text">
               -&nbsp;<a href="#component-led-strip-out-2">LED Strip Out 2</a>
             </div>
           </div>
           <div class="components-row">
-            <div class="components-row-number">09</div>
+            <div class="components-row-number">10</div>
             <div class="components-row-text">
               -&nbsp;<a href="#component-signal-out-indicator"
                 >Signal Out Indicator</a
@@ -189,7 +197,7 @@
             </div>
           </div>
           <div class="components-row">
-            <div class="components-row-number">10</div>
+            <div class="components-row-number">11</div>
             <div class="components-row-text">
               -&nbsp;<a href="#component-signal-converter"
                 >3.3V to 5v Signal Converter</a
@@ -197,17 +205,9 @@
             </div>
           </div>
           <div class="components-row">
-            <div class="components-row-number">11</div>
-            <div class="components-row-text">
-              -&nbsp;<a href="#component-rp2040-microcontroller"
-                >RP2040 Microcontroller</a
-              >
-            </div>
-          </div>
-          <div class="components-row">
             <div class="components-row-number">12</div>
             <div class="components-row-text">
-              -&nbsp;<a href="#component-flash-memory">4MB Flash Memory</a>
+              -&nbsp;<a href="#component-duplicate-out-toggle-switch">Duplicate Out Toggle Switch</a>
             </div>
           </div>
           <div class="components-row">
@@ -248,7 +248,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/main-power-connector.png"
+                  src="./images/parts/main-power-connector.jpg"
                 />
                 <div class="content-with-image-text">
                   Controller Board එක ක්‍රියාත්මක වීමට අවශ්‍ය විදුළි සැපයුම මෙම Connector එක හරහා ලබා දිය හැක. 
@@ -269,7 +269,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/power indicator.png"
+                  src="./images/parts/power indicator.jpg"
                 />
                 <div class="content-with-image-text">
                   Controller Board එකට අවශ්‍ය පරිදි විදුළි සැපයුමක් ලැබී ඇති බව මෙම LED එක මගින් පෙන්වයි
@@ -286,7 +286,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/power-select-jumpers.png"
+                  src="./images/parts/power-select-jumpers.jpg"
                 />
                 <div class="content-with-image-text">
                   මෙම Headrs හරහා යොදා ඇති Jumper එක මගින් Board එකට ලැබෙන 
@@ -305,10 +305,13 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/master control in.png"
+                  src="./images/parts/master control in.jpg"
                 />
                 <div class="content-with-image-text">
-                  This is the main power connecter of the board
+                  Slave Mode එකෙන් ක්‍රියාත්මක වන Board එකකට ක්‍රියාත්මක වීමට අවශ්‍ය
+                  Controlling Signal ලබාගැනීම සඳහා මෙම Connector එක භාවිතා වේ.
+                  මෙම Connector එකට ලැබන Signals ඒ ආකාරයෙන්ම <a href="#component-master-control-out">Master Control Out</a> Connector
+                  එක හරහා තවත් Slave Mode Board එකකට ලබා දිය හැක. 
                 </div>
               </div>
             </div>
@@ -322,92 +325,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/mode-indicator.png"
-                />
-                <div class="content-with-image-text">
-                  This is the main power connecter of the board
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="component-tf-card-slot" class="h-sub-section">
-            <div class="h-section-title-4">
-              TF Card Slot
-            </div>
-            <div class="h-section-content">
-              <div class="content-with-image">
-                <img
-                  class="content-with-image-img"
-                  src="./images/tf-card-connector.png"
-                />
-                <div class="content-with-image-text">
-                  This is the main power connecter of the board
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="component-led-strip-out-1" class="h-sub-section">
-            <div class="h-section-title-4">
-              LED Strip Out 1 + Power In
-            </div>
-            <div class="h-section-content">
-              <div class="content-with-image">
-                <img
-                  class="content-with-image-img"
-                  src="./images/led-strip-out-1.png"
-                />
-                <div class="content-with-image-text">
-                  This is the main power connecter of the board
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="component-led-strip-out-2" class="h-sub-section">
-            <div class="h-section-title-4">
-              LED Strip Out 2
-            </div>
-            <div class="h-section-content">
-              <div class="content-with-image">
-                <img
-                  class="content-with-image-img"
-                  src="./images/led-strip-out-2.png"
-                />
-                <div class="content-with-image-text">
-                  This is the main power connecter of the board
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="component-signal-out-indicator" class="h-sub-section">
-            <div class="h-section-title-4">
-              Signal Out Indicator
-            </div>
-            <div class="h-section-content">
-              <div class="content-with-image">
-                <img
-                  class="content-with-image-img"
-                  src="./images/led-strip-out-indicator.png"
-                />
-                <div class="content-with-image-text">
-                  This is the main power connecter of the board
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="component-signal-converter" class="h-sub-section">
-            <div class="h-section-title-4">
-              3.3v to 5v Signal Converter
-            </div>
-            <div class="h-section-content">
-              <div class="content-with-image">
-                <img
-                  class="content-with-image-img"
-                  src="./images/level-shifter.png"
+                  src="./images/parts/mode-indicator.jpg"
                 />
                 <div class="content-with-image-text">
                   This is the main power connecter of the board
@@ -424,7 +342,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/rp-2040-microcontroller.png"
+                  src="./images/parts/rp-2040-microcontroller.jpg"
                 />
                 <div class="content-with-image-text">
                   This is the main power connecter of the board
@@ -433,15 +351,102 @@
             </div>
           </div>
 
-          <div id="component-flash-memory" class="h-sub-section">
+          <div id="component-tf-card-slot" class="h-sub-section">
             <div class="h-section-title-4">
-              4MB Flash Memory
+              TF Card Slot
             </div>
             <div class="h-section-content">
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/4mb-flash.png"
+                  src="./images/parts/tf-card-connector.jpg"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-led-strip-out-1" class="h-sub-section">
+            <div class="h-section-title-4">
+              LED Strip Out 1 + Power In
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/parts/led-strip-out-1.jpg"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-led-strip-out-2" class="h-sub-section">
+            <div class="h-section-title-4">
+              LED Strip Out 2
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/parts/led-strip-out-2.jpg"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-signal-out-indicator" class="h-sub-section">
+            <div class="h-section-title-4">
+              Signal Out Indicator
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/parts/led-strip-out-indicator.jpg"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="component-signal-converter" class="h-sub-section">
+            <div class="h-section-title-4">
+              3.3v to 5v Signal Converter
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/parts/level-shifter.jpg"
+                />
+                <div class="content-with-image-text">
+                  This is the main power connecter of the board
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div id="component-duplicate-out-toggle-switch" class="h-sub-section">
+            <div class="h-section-title-4">
+              Duplicate Out Toggle Switch
+            </div>
+            <div class="h-section-content">
+              <div class="content-with-image">
+                <img
+                  class="content-with-image-img"
+                  src="./images/parts/line-out-switch.jpg"
                 />
                 <div class="content-with-image-text">
                   This is the main power connecter of the board
@@ -458,7 +463,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/master-control-out.png"
+                  src="./images/parts/master-control-out.jpg"
                 />
                 <div class="content-with-image-text">
                   This is the main power connecter of the board
@@ -476,7 +481,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/flash-button.png"
+                  src="./images/parts/flash-button.jpg"
                 />
                 <div class="content-with-image-text">
                   This is the main power connecter of the board
@@ -493,7 +498,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/restart-button.png"
+                  src="./images/parts/restart-button.jpg"
                 />
                 <div class="content-with-image-text">
                   This is the main power connecter of the board
@@ -510,7 +515,7 @@
               <div class="content-with-image">
                 <img
                   class="content-with-image-img"
-                  src="./images/type-c-connector.png"
+                  src="./images/parts/type-c-connector.jpg"
                 />
                 <div class="content-with-image-text">
                   This is the main power connecter of the board
