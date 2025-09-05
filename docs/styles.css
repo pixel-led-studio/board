@@ -79,15 +79,19 @@ span.highlight-text {
 }
 
 .h-section {
-  padding-top: 2rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .h-sub-section {
-  padding-top: 1rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.h-section,.h-sub-section{
+  transition: all 1s ease-in-out;
 }
 
 .h-section-title-2 {

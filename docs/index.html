@@ -547,4 +547,25 @@
       
     </div>
   </body>
+
+
+  <script>
+    function highlightSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      // add #000 to background color
+      section.style.backgroundColor = "#cdfafb";
+      setTimeout(() => {
+        section.style.backgroundColor = null;
+      }, 3000);
+    }
+
+    // event on any <a> tag click
+    document.addEventListener("click", (event) => {
+      if (event.target.tagName === "A") {
+        const sectionId = event.target.getAttribute("href").slice(1);
+        highlightSection(sectionId);
+      }
+    })
+  </script>
+
 </html>
