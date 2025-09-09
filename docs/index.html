@@ -257,7 +257,7 @@
                   මෙම Board එක 5v හෝ 12v මගින් ක්‍රියාත්මක කල හැකි අතර, 12v සපයන්නේ නම්
                   <a href="#component-switching-headers">5v/12v Switching Header</a> එක 12v හරහා 
                   සම්බන්ධ කර ඇති බවර තහවුරු කරගන්න. 
-                  තවද <a href="#component-led-strip-out-1">LED Strip Out 1 + Power In</a> හරහා 
+                  තවද <a href="#component-led-strip-out-1">LED Strip Out 1</a> හරහා 
                   විදුළිය සපයන්නේ නම් මෙම Connector එක හරහා විදුලිය සැපයීම අවශ්‍ය නොවේ.</div>
                 </div>
               </div>
@@ -296,7 +296,7 @@
                 <div class="content-with-image-text">
                   මෙම Headrs හරහා යොදා ඇති Jumper එක මගින් Board එකට ලැබෙන 
                   වෝල්ටීයතාව 5v ද 12v ද යන්න සැකසිය හැක. 
-                  <span class="highlight-text">මෙම header එක 5v ලෙස සකසා 12v විදුළි සැපයුමක් ලබා දීම නොකල යුතුයි</span>
+                  <b>හො.ම.ත.ග.යු: </b><span class="highlight-text">මෙම header එක 5v ලෙස සකසා 12v විදුළි සැපයුමක් ලබා දීම නොකල යුතුයි</span>
                 </div>
               </div>
             </div>
@@ -333,7 +333,7 @@
                   src="./images/parts/mode-indicator.jpg"
                 />
                 <div class="content-with-image-text">
-                  This is the main power connecter of the board
+                  Board එක ක්‍රියාත්මක වන ආකාරය(Mode) පිළිබඳව මෙම LED එක මගින් පෙන්වනු ලබයි
                 </div>
               </div>
             </div>
@@ -350,7 +350,13 @@
                   src="./images/parts/rp-2040-microcontroller.jpg"
                 />
                 <div class="content-with-image-text">
-                  This is the main power connecter of the board
+                  මෙය එක පසුගිය වසර කිහිපය තුල අතිශයින් ජනප්‍රිය වූ 
+                  <a href="https://www.raspberrypi.com/products/raspberry-pi-pico/" target="_blank">Raspberry pi pico</a> 
+                  Board එකෙහි භාවිතා වන Microcontroller එක වන අතර, Arduino, Esp32 වැනි Board වලට වඩා පසුවෙන් 
+                  Programm කිරිමට හැකි අතර මෙම Controller Board එක ද <a href="https://www.raspberrypi.com/products/raspberry-pi-pico/" target="_blank">Raspberry pi pico</a>
+                  Board එකක් ලෙස Programm කල හැකි පරිදි නිර්මා‍ණය කර තිබේ. මෙය Micropython හරහා මෙන්ම Arduino IDE එක හරහා ද 
+                  Programm කල හැකි අතර, Programming පිලිබඳ දැනුමක් නැති අයට පවා අප විසින් නිකුත් කල ඇති Programs ඉතා
+                  පහසුවෙන් Drag and Drop කර Install කරගත හැක.
                 </div>
               </div>
             </div>
@@ -367,7 +373,8 @@
                   src="./images/parts/tf-card-connector.jpg"
                 />
                 <div class="content-with-image-text">
-                  This is the main power connecter of the board
+                  LED රටා ඇතුලත් කර ඇති Micro-SD Cards මෙම slot එක හරහා සම්බන්ධ කල හැකි අතර, මෙම board එකට
+                  Micro-SD Card Adapter එකක් ලෙස ද ක්‍රියාත්මක විය හැකි නිසා වෙනම Micro-SD Card Adapter එකක් අවශ්‍ය නොවේ
                 </div>
               </div>
             </div>
@@ -384,7 +391,11 @@
                   src="./images/parts/led-strip-out-1.jpg"
                 />
                 <div class="content-with-image-text">
-                  This is the main power connecter of the board
+                  LED strip එකක්(LED 2000 ක් දක්වා) ක්‍රියාත්මක වීමට අවශ්‍ය signals ලබා දීම සඳහා මෙම connector එක භාවිතා වන අතර, 
+                  Board එකට ක්‍රියාත්මක වීමට අවශ්‍ය විදුලිය සැපයීමට ද මෙම connector එක භාවිතා කල හැක. 
+                  මෙම connector එකට වයර් සම්බන්ධ කල යුතු ආකාරය පිළිබඳ රූපසටහනක් <a>මෙතනින්</a> දක්වා ඇත. තවද, 
+                  මෙම connector එක හරහා විදුළිය සපයන්නේ නම්, <a href="#component-power-connector">Power Connector</a>
+                  එක හරහා විදුළිය සැපයීම අවශ්‍ය නොවේ.
                 </div>
               </div>
             </div>
@@ -401,7 +412,11 @@
                   src="./images/parts/led-strip-out-2.jpg"
                 />
                 <div class="content-with-image-text">
-                  This is the main power connecter of the board
+                  තවත් LED strip එකක්(LED 2000 ක් දක්වා) සම්බන්ධ කිරීමට අවශ්ය නම් මෙම Connector එක භාවිතා කල හැකි අතර,
+                  <a href="#component-led-strip-out-1">LED Strip Out 1</a> එකට හා මෙම Connector එකට එකිනෙකට වෙනස් රටා 2ක් 
+                  ක්‍රියාත්මක කිරීමේ හැකියාව ඇත. <a href="#component-led-strip-out-1">LED Strip Out 1</a> හි රටාවම 
+                  මෙම connector එක හරහා ලබාගැනීමට අවශ්‍ය නම් <a href="#component-duplicate-out-toggle-switch">Duplicate Out</a>
+                  ස්විචය භාවිතා කල හැක.
                 </div>
               </div>
             </div>
@@ -418,7 +433,7 @@
                   src="./images/parts/led-strip-out-indicator.jpg"
                 />
                 <div class="content-with-image-text">
-                  This is the main power connecter of the board
+                  රටා වලට අදාල Signals, Board එක හරහා නිකුත් කෙරෙන විට මෙම LED එක දැල්වේ.
                 </div>
               </div>
             </div>
